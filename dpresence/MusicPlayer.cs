@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -9,10 +10,11 @@ namespace dpresence
 {
     class MusicPlayer
     {
+        private static SoundPlayer player;
         public static void InitMusicPlayer()
         {
-            // TODO: Add in next update
-           // SoundPlayer player = new SoundPlayer(dpresence.Sound)
+            player = new SoundPlayer(Properties.Resources.POWERSOUND);
+            player.Play();
         }
     }
 }

@@ -18,9 +18,9 @@ namespace dpresence
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool AllocConsole();
 
-        public void InitPresence(string con)
+        public void InitPresence(string details, string state, string id)
         {
-            client = new DiscordRPC.DiscordRpcClient("1113320553298788433");
+            client = new DiscordRPC.DiscordRpcClient(id);
 
             client.Logger = new ConsoleLogger() { Level = LogLevel.Warning };
             // This does not show anything
@@ -45,14 +45,20 @@ namespace dpresence
             //Call this as many times as you want and anywhere in your code.
             client.SetPresence(new RichPresence()
             {
-                Details = "Can someone hug me",
-                State = con,
+                Details = details,
+                State = state,
                 Assets = new Assets()
                 {
                     LargeImageKey = "sub",
                     LargeImageText = "This is not real lol"
                 }
             });
+        }
+
+        public void Close()
+        {
+            client.Dispose();
+            Console.WriteLine("Ended connection to discord.");
         }
     }
 }
