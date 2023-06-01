@@ -18,7 +18,12 @@ namespace dpresence
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool AllocConsole();
 
-        public void InitPresence(string details, string state, string id)
+        public void InitPresence(
+            string details, 
+            string state, 
+            string id,
+            string small_img,
+            string large_img)
         {
             client = new DiscordRPC.DiscordRpcClient(id);
 
@@ -49,8 +54,8 @@ namespace dpresence
                 State = state,
                 Assets = new Assets()
                 {
-                    LargeImageKey = "sub",
-                    LargeImageText = "This is not real lol"
+                    LargeImageKey = large_img,
+                    SmallImageKey = small_img
                 }
             });
         }

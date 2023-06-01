@@ -70,6 +70,8 @@ namespace dpresence
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(39, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 13);
@@ -80,6 +82,8 @@ namespace dpresence
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(32, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 13);
@@ -110,6 +114,8 @@ namespace dpresence
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
             this.label3.Location = new System.Drawing.Point(32, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(259, 39);
@@ -120,7 +126,8 @@ namespace dpresence
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(195, 283);
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Location = new System.Drawing.Point(195, 267);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(91, 13);
             this.linkLabel1.TabIndex = 7;
@@ -130,7 +137,8 @@ namespace dpresence
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(12, 283);
+            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel2.Location = new System.Drawing.Point(12, 267);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(43, 13);
             this.linkLabel2.TabIndex = 8;
@@ -156,6 +164,8 @@ namespace dpresence
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
             this.label4.Location = new System.Drawing.Point(270, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 13);
@@ -166,6 +176,8 @@ namespace dpresence
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(382, 85);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 13);
@@ -175,6 +187,8 @@ namespace dpresence
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
             this.label6.Location = new System.Drawing.Point(233, 50);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(251, 13);
@@ -193,6 +207,8 @@ namespace dpresence
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
             this.label7.Location = new System.Drawing.Point(345, 192);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(122, 13);
@@ -204,6 +220,7 @@ namespace dpresence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::dpresence.Properties.Resources.BACKGROUND;
             this.ClientSize = new System.Drawing.Size(496, 305);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.IDBox);
@@ -222,6 +239,7 @@ namespace dpresence
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Wayv\'s rich Presence Machine v1.0";
             this.Load += new System.EventHandler(this.Form1_Load);

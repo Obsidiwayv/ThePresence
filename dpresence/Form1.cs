@@ -41,9 +41,20 @@ namespace dpresence
             if (!Utils.StringIsValid(details, "details")) return;
             if (!Utils.IDisThere(appID)) return;
 
+            if (SmallImage.Text.Length > 0 && LargeImage.Text.Length == 0)
+            {
+                MessageBox.Show("Must have a large image before small image");
+                return;
+            }
+
             Console.Write("ID: {0}", appID);
             
-            connection.InitPresence(details, state, appID);
+            connection.InitPresence(
+                details, 
+                state,
+                appID,
+                SmallImage.Text,
+                LargeImage.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)

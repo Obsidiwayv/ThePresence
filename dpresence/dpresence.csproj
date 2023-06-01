@@ -52,13 +52,14 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>presencemac.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -70,10 +71,10 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>5C22C56E07BEA09B511891C7FE57E9A729FD0E76</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>0E19E8911B2805A32D28757526A9A9BD48161FBB</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>dpresence_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>wayv_cert.pfx</ManifestKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DiscordRPC, Version=1.1.3.18, Culture=neutral, processorArchitecture=MSIL">
@@ -119,9 +120,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="dpresence_TemporaryKey.pfx" />
     <None Include="packages.config" />
-    <None Include="presencemac.pfx" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -153,6 +152,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\BACKGROUND.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
